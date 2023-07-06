@@ -16,7 +16,7 @@ $ cd supertank-scraper-website
 $ docker build -t supertank-scraper-website .
 ```
 
-### You can then run it
+### You can then run it with this command:
 ```
 docker run -d -p 9821:80 --name supertank-scraper-website -t supertank-scraper-website
 ```
@@ -38,7 +38,7 @@ docker run -d -p 9821:80 --name supertank-scraper-website -t tuncaya/supertank-s
 
 ----------------
 
-### or use **docker-compose.yml**
+## or use **docker-compose.yml**
 **docker-compose.yml** 
 
 ```
