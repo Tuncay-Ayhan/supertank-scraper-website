@@ -6,10 +6,30 @@ This is a container, that has a custom (python) scraper for https://supertank.nl
 
 _**Example website: https://supertank-scraper.moonling.nl**_
 
+------
 
+## Build it yourself with the provided **Dockerfile**
+```
+$ cd ~/
+$ git clone https://github.com/Tuncay-Ayhan/supertank-scraper-website.git
+$ cd supertank-scraper-website
+$ docker build -t supertank-scraper-website .
+```
+
+### You can then run it
+```
+docker run -d -p 9821:80 --name supertank-scraper-website -t supertank-scraper-website
+```
+
+### or use the ready made image from Dockerhub
+```
+docker run -d -p 9821:80 --name supertank-scraper-website -t tuncaya/supertank-scraper-website:latest
+```
+
+### or use **docker-compose.yml**
 **docker-compose.yml** 
 
-
+```
     version: "3"
     services:
       supertank-scraper-website:
@@ -20,20 +40,4 @@ _**Example website: https://supertank-scraper.moonling.nl**_
         ports:
           - '9821:80'
         restart: unless-stopped
-
-
-
-------
-
-## Build it yourself with the provided **Dockerfile**
-```
-$ cd ~/
-$ git clone git@github.com:Tuncay-Ayhan/supertank-scraper-website.git
-$ cd supertank-scraper-website
-$ docker build -t supertank-scraper-website .
-```
-
-### You can then run it with
-```
-docker run -d -p 9821:80 --name supertank-scraper-website
 ```
