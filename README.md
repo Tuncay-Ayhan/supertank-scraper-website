@@ -2,7 +2,7 @@
 
 ## Supertank Scraper Website
 
-This is a container, that has a custom (python) scraper for https://supertank.nl which also imports the values every 10 minutes into an CSV file. The CSV then get's loaded into a selfhosted webpage, that is being hosted on port 9821 (internal port 80).  
+"This is a container that has a custom (Python) scraper for https://supertank.nl. The scraper imports the values from the website every 10 minutes into a CSV file. The CSV file is then loaded onto a self-hosted webpage, which is hosted on port 9821 (internal port 80)."
 
 _**Example website: https://supertank-scraper.moonling.nl**_
 
