@@ -1,6 +1,8 @@
+# DEPRECATED DUE TO THE REMOVAL OF THE PRICELIST
+
 ![Example](https://ha.moonling.nl/local/websites/images/supertank-scraper-moonling-nl.png)
 
-## Supertank Scraper Website
+## Supertank Scraper Website 
 
 "This is a container that has a custom (Python) scraper for https://supertank.nl. The scraper imports the values from the website every 10 minutes into a CSV file. The CSV file is then loaded onto a self-hosted webpage, which is hosted on port 9821 (internal port 80)."
 
